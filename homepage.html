@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
+<style>
+   body {
+      background-color: black;
+       font-family: sans-serif; 
+    }
+    
+    
+    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: forestgreen;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-family: inherit;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: forestgreen;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}    
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        
+        
+        
+    }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home.html">Home</a></li>
+  <li><a href="#recentupload.html">Recently Uploaded</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0).sg-input-menu {background-color:forestgreen;}" class="dropbtn">Sports</a>
+    <div class="dropdown-content">
+      <a href="#">Rugby</a>
+      <a href="#">Basketball</a>
+      <a href="#">Soccer</a>
+        <a href="#">Cricket</a>
+        <a href="#">Waterpolo</a>
+    </div>
+      <li class="dropdown">
+          <a href="javascript:void(0).sg-input-menu {background-color:forestgreen;}" class="dropbtn">Art</a>
+    <div class="dropdown-content">
+      <a href="#">Music</a>
+      <a href="#">Dance</a>
+      <a href="#">Performing Arts</a>
+    </div>
+                <li class="dropdown">
+    <a href="javascript:void(0).sg-input-menu {background-color:forestgreen;}" class="dropbtn">Media</a>
+    <div class="dropdown-content">
+      <a href="#">Short Films</a>
+      <a href="#">Skits</a>
+      <a href="#">Music Videos</a>
+    </div>
+    </li>
+    <li><a href="#home">Contact</a></li>
+</ul>
+    
+
+<h1 style="font-family:verdana; color: antiquewhite; text-align: center">Welcome to SpringsStream!</h1>
+      <div class="slider">
+    <img name="slide" id="slide" height="200" width="400">
+  </div>
+
+//Slideshow
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3;	// Time Between Switch
+	 
+// Image List
+images[0] = "https://lh3.googleusercontent.com/vm8LPAG93OEet48y6Y-maBlAQxkJqspKkCSwlAn7G4P7jfH22T5pWO6cesJtIps2fOfb=s170";
+images[1] = "https://westernsprings.school.nz/wp-content/uploads/2018/06/MG_6721ninagnz-1024x1024.jpg";
+images[2] = "https://www.producemarketguide.com/sites/default/files/Commodities.tar/Commodities/pears_commodity-page.png";
+
+
+// Change Image
+window.onload = function changeImg(){
+    document.getElementById("slide").src = images[i];
+	document.slide.src = images[i];
+    
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+        i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+</script>
+
+    
+
+</body>
+
+
+</html>
